@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hotel del Luna</title>
+
+    <script>
+        
+        function tologin() {
+            var a = document.getElementsByClassName("fill")[0];
+            a.style.display = "block";
+            document.getElementById('bg').play();
+
+        }
+        
+        function tologin2() {
+            var a = document.getElementsByClassName("fill")[0];
+            a.style.display = "none";
+            document.getElementById('bg').play();
+
+        }
+    </script>
+</head>
+    
+    <div class="main">
+        <audio id="bg">
+        <source src="boom.mp3" type="audio/mpeg">
+    </audio>
+        <img class="title-img" src="TITLE.png">
+
+        <h1 class="h1" style="margin-top: -5px;">Welcome to Hotel del Luna</h1>
+
+        <button class="boxmini" onclick="tologin()" style="background-color:goldenrod;">Log In</button>
+
+
+    </div>
+
+    <div class="fill">
+        <div class="box">
+
+            <div class="box-login">
+
+                <img class="box-img" src="logogold.png">
+                <h1 id="box-h1">Log In</h1>
+
+                <input id="login-email" placeholder="Enter Email" />
+
+                <input type="password" id="login-pass" placeholder="Enter Password" style="margin-top: 5px;" />
+
+                <br>
+                <br>
+
+
+
+                <button id="btn" onclick="tologin2()"><b>Log In</b></button>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body></html>
